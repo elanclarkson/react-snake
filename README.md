@@ -4,7 +4,7 @@
 
 Run `npm install && npm run start`.
 
-Control the snake with standard W/A/S/D controls.
+Control the snake with standard W/A/S/D controls (you may need to click the game to gain focus).
 
 **About**
 
@@ -18,6 +18,6 @@ Everything contained in the game grid is stored in a 2-dimensional array, which 
 
 This is my first ever React.js project, so naturually there are improvements I would make if I had the time:
 
-1. Separate collision detection into another function. (limitations in React.js's handling of state prevented me from doing this initially, but there is probably a way.)
+1. Separate collision detection into another function. (limitations with React.js's built-in state management made this difficult, but there is probably a way if using Redux or something similar.)
 2. Mutate and return object clones rather than mutating directly. (E.g. in spawnFruit(grid) - Javascript shamelessly passes arguments by reference, so I didn't see the point in adding overhead by copying objects on every game tick when I could mutate them directly. However on second thought this is a much better design pattern.)
 3. General refactoring to ensure best separation of concerns. (E.g. moving Snake into separate component rather than having as part of Game component.)
