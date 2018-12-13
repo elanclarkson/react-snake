@@ -8,11 +8,13 @@ Control the snake with standard W/A/S/D controls.
 
 **About**
 
-Since I was 15 years old I've always had this idea to develop a Snake-like game where everything on-screen was represented by a 2-dimensional array, thereby abstracting logic and data manipulation from the view.
+Since I was 15 years old I've had this idea to develop a Snake-like game where everything on-screen was represented by a 2-dimensional array, thereby abstracting logic and data manipulation from the view.
 
 It may not be the best way to develop a game like this (Canvas would probably be better), but after reading about the Virtual DOM in React.js I couldn't wait to finally give this concept a go!
 
 Everything contained in the game grid is stored in a 2-dimensional array, which is then easily translated into div elements with corresponding css classes in the DOM. This is all thanks to the way React.js handles DOM manipulation.
+
+**Improvements**
 
 This is my first ever React.js project, so naturually there are improvements I would make if I had the time:
 
