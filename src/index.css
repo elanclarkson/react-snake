@@ -1,0 +1,82 @@
+#game {
+	text-align: center;
+}
+
+#grid {
+	position: relative;
+	display: inline-block;
+	border: 1px solid #ccc;
+}
+
+#game-over-container {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	left: 0;
+	top: 0;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 150ms;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#game-over-container h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#game-over-container p {
+ 	margin-top: 0;
+ 	margin-bottom: 0.5rem;
+ }
+
+#game-over-container h2 {
+	margin-top: 0;
+}
+
+#game-over-container button {
+	margin-top: 1rem;
+}
+
+.game-over #game-over-container {
+	opacity: 1;
+}
+
+.row {
+	/*display: flex;*/
+	/*width: 100%;*/
+	/*flex-basis: stretch;*/
+	height: 40px;
+}
+
+.row .col {
+	/*flex: 1;*/
+	display: inline-block;
+	box-sizing: border-box;
+	/*border: 1px solid #ccc;*/
+	width: 40px;
+	height: 40px;
+}
+
+.row .col.head {
+	background-color: red;
+	border: 1px solid #8e8e8e;
+}
+
+.row .col.body {
+	background-color: lime;
+	border: 1px solid #8e8e8e;
+}
+
+.row .col.tail {
+	background-color: lime;
+	border: 1px solid #8e8e8e;
+}
+
+.row .col.fruit {
+	background-color: orange;
+	border: 1px solid #8e8e8e;
+}
